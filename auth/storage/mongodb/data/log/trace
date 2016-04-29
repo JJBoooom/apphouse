@@ -1,0 +1,38 @@
+Thu Apr 28 10:02:34 [initandlisten] MongoDB starting : pid=32 port=27017 dbpath=/opt/mongodb/data/db 64-bit host=5d27045bd976
+Thu Apr 28 10:02:34 [initandlisten] db version v2.0.5, pdfile version 4.5
+Thu Apr 28 10:02:34 [initandlisten] git version: 1bb4de4630302fad8af53824ca4f627db490b753
+Thu Apr 28 10:02:34 [initandlisten] build info: Linux ip-10-110-9-236 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_41
+Thu Apr 28 10:02:34 [initandlisten] options: { bind_ip: "localhost", config: "/opt/mongodb/conf/mongodb_linux.conf", dbpath: "data/db", fork: "true", journal: "true", logpath: "data/log/trace", nohttpinterface: "true", port: 27017 }
+Thu Apr 28 10:02:34 [initandlisten] journal dir=/opt/mongodb/data/db/journal
+Thu Apr 28 10:02:34 [initandlisten] recover begin
+Thu Apr 28 10:02:34 [initandlisten] info no lsn file in journal/ directory
+Thu Apr 28 10:02:34 [initandlisten] recover lsn: 0
+Thu Apr 28 10:02:34 [initandlisten] recover /opt/mongodb/data/db/journal/j._0
+Thu Apr 28 10:02:34 [initandlisten] recover cleaning up
+Thu Apr 28 10:02:34 [initandlisten] removeJournalFiles
+Thu Apr 28 10:02:34 [initandlisten] recover done
+Thu Apr 28 10:02:36 [initandlisten] waiting for connections on port 27017
+Thu Apr 28 10:03:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 10:08:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 10:13:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 10:18:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 10:23:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 10:28:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 10:33:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 10:38:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 10:43:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 10:48:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 10:53:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 10:58:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:03:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:08:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:13:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:18:36 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:23:37 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:28:37 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:33:37 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:38:37 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:43:37 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:48:39 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:53:39 [clientcursormon] mem (MB) res:13 virt:540 mapped:0
+Thu Apr 28 11:58:39 [clientcursormon] mem (MB) res:13 virt:540 mapped:0

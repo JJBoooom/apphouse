@@ -1,0 +1,34 @@
+registry_collector_auth:
+  ports:
+  - 9182:9182/tcp
+  - 9185:9185/tcp
+  - 27017:27017/tcp
+  tty: true
+  image: <AUTH_IMAGE>
+  volumes:
+  - <configPath>/registry_collector/config.conf:/opt/source/frame/conf/config.conf
+  - <storagePath>/mongodb/data:/opt/mongodb/data
+  - <configPath>/registry_auth/config.conf:/opt/source2/frame/conf/config.conf
+  - /proc:/host/proc:ro
+  - <storagePath>:/.hidden/root:ro
+  stdin_open: true
+registryui:
+  ports:
+  - 80:80/tcp
+  - 443:443/tcp
+  environment:
+    REGISTRY_BACKEND_HOST: PrivateRegistryHostIP
+    REGISTRY_BACKEND_PORT: '9185'
+  tty: true
+  image: <UI_IMAGE>
+  stdin_open: true
+registry:
+  ports:
+  - 5002:5002/tcp
+  tty: true
+  image: <REGISTRY_IMAGE>
+  volumes:
+  - <configPath>/registry/config.yml:/etc/docker/registry/config.yml
+  - <configPath>/registry/docker_auth/ssl:/ssl
+  - <storagePath>/registry:/var/lib/registry
+  stdin_open: true
