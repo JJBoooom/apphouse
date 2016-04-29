@@ -10,12 +10,11 @@ set -e
 License_display="
 --------------------------------------------------------------\n
 Welcome to use AppHouse, you can access private repository via\n
-https://localhost:443 or http://localhost:80.\n
+https://<YourHostIP>:443 or http://<YourHostIP>:80.\n
 If you have any questions, please access www.youruncloud.com,\n 
 thanks.\n
 --------------------------------------------------------------\n"
 echo -e $License_display
-exit 1
 
 docker version
 if [ $? -ne 0 ];then 
@@ -38,18 +37,25 @@ fi
 
 
 if [ -z $AUTH_IMAGE ] ;then
-    echo "env AUTH_IMAGE is empty; use default auth image"
-    export AUTH_IMAGE=index.alauda.cn/cloudsoar/registry_collector_auth:0.8.6
+    echo "env AUTH_IMAGE is empty; container must run with AUTH_IMAGE "
+    exit 1
+#    echo "env AUTH_IMAGE is empty; use default auth image"
+#    echo "env AUTH_IMAGE is empty; use default auth image"
+#    export AUTH_IMAGE=index.alauda.cn/cloudsoar/registry_collector_auth:0.8.6
 fi
 
 if [ -z $UI_IMAGE ] ;then
-    echo "env UI_IMAGE is empty; use default ui image"
-    export UI_IMAGE=index.alauda.cn/cloudsoar/registry_ui:test
+    echo "env UI_IMAGE is empty; container must run with UI_IMAGE "
+    exit 1
+    #echo "env UI_IMAGE is empty; use default ui image"
+    #export UI_IMAGE=index.alauda.cn/cloudsoar/registry_ui:test
 fi
 
 if [ -z $REGISTRY_IMAGE ]; then 
-    echo "env REGISTRY_IMAGE is empty; use default registry image"
-    export REGISTRY_IMAGE=index.alauda.cn/cloudsoar/registry:2.3.0
+    echo "env REGISTRY_IMAGE is empty; container must run with REGISTRY_IMAGE "
+    exit 1
+   # echo "env REGISTRY_IMAGE is empty; use default registry image"
+   ## export REGISTRY_IMAGE=index.alauda.cn/cloudsoar/registry:2.3.0
 fi
 
 export CONFIG_PATH=$configPath

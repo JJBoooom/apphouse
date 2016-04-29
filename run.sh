@@ -7,7 +7,7 @@ docker run --privileged=true -it \
     -v /home/kiongf/watch/auth/config:/var/lib/registry_Deploy/install/config \
     -v /home/kiongf/watch/auth/storage:/var/lib/registry_Deploy/install/storage \
     -v /var/lib/docker:/var/lib/docker \
-    apphouse:0.0.2
+    apphouse:0.0.5
    # --entrypoint=/bin/bash \
    # apphouse:0.0.1
    # -e AUTH_IMAGE=
