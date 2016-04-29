@@ -5,11 +5,23 @@
   
 
 set -e
-License_display="--------------------------------------------------------------
-Welcome to use AppHouse, you can access private repository via https://localhost:443 or http://localhost:80.
-If you have any questions, please access www.youruncloud.com, thanks.
+
+
+License_display="
+--------------------------------------------------------------
+Welcome to use AppHouse, you can access private repository via
+https://localhost:443 or http://localhost:80.
+If you have any questions, please access www.youruncloud.com, 
+thanks.
 --------------------------------------------------------------"
 echo $License_display
+
+docker version
+if [ $? -ne 0 ];then 
+    echo "server docker version doesn't match apphouse docker version"    
+    echo "please install correct docker version "
+    exit 1
+fi
 
 inspectProg="/var/lib/registry_Deploy/inspect"
 configPath=`$inspectProg | cut -d ":" -f1`
