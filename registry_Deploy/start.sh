@@ -8,13 +8,14 @@ set -e
 
 
 License_display="
---------------------------------------------------------------
-Welcome to use AppHouse, you can access private repository via
-https://localhost:443 or http://localhost:80.
-If you have any questions, please access www.youruncloud.com, 
-thanks.
---------------------------------------------------------------"
-echo $License_display
+--------------------------------------------------------------\n
+Welcome to use AppHouse, you can access private repository via\n
+https://localhost:443 or http://localhost:80.\n
+If you have any questions, please access www.youruncloud.com,\n 
+thanks.\n
+--------------------------------------------------------------\n"
+echo -e $License_display
+exit 1
 
 docker version
 if [ $? -ne 0 ];then 
